@@ -21,7 +21,7 @@ class Person {
 
     @Override
     public String toString() {
-        return "Person{" + "Name=" + Name + ", birthdate=" + birthdate.toString() + '}';
+        return "Person{" + "Name=" + Name + ", birthdate=" + birthdate.toString() + ", age=" +this.getAge()+'}';
     }
     public int getAge(){
         return (int) ((new Date().getTime()-birthdate.getTime())/MS_YEARS);
